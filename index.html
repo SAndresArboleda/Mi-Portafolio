@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Mi Portafolio"> <!-- (lo que encuentra google cuando alguien busca información) -->
+	<meta name="keywords" content="Portafolio">  <!-- la palabra clave con la que buscan en google -->
+	<title>Mi Portafolio</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/2413f55fe9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div class='htmlBarrNavPortafolio'>
+        <div class='contenedor'>
+            <header>
+                <div class='logo'>
+                    <a href="#inicio">Andrés</a>
+                </div>
+                <nav id='nav'>
+                    <ul>
+                        <li><a href="#inicio" onClick={seleccionar}>INICIO</a></li>
+                        <li><a href="#sobremi" onClick={seleccionar}>SOBRE MI</a></li>
+                        <li><a href="#skills" onClick={seleccionar}>INFORMACION</a></li>
+                        <li><a href="#curriculum" onClick={seleccionar}>CURRICULM</a></li>
+                        <li><a href="#portafolio" onClick={seleccionar}>PROYECTOS</a></li>
+                        <!-- <li><a href="#contacto" onClick={seleccionar}>CONTACTAR</a></li> -->
+                    </ul>
+                </nav>
+                <div class='nav-responsive' onClick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
+        </div>
+        <div>
+            <section id='inicio' class='inicio'>
+                <div class='contenedor-banner'>
+                    <div class='fotoPortaf'>
+                        <div class="fotoPort one">
+                            <div class="bgPortaf"></div>
+                            <img class="imgPortaf" src="/img/Andres.png" alt="" />
+                        </div>
+                    </div>
+                    <h1>ANDRÉS ARBOLEDA</h1>
+                    <h2>Desarrollador Full Stack</h2>
+                    <div class='redes'>
+                        <a href="https://www.linkedin.com/in/simon-arboleda-5a91612b5/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/SAndresArboleda"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+            <section id="sobremi" class="sobremi">
+                <div class="contenido-seccion">
+                    <h2>Sobre mi</h2>
+                    <p>Hola soy <span>desarrollador Full Stack </span>y me concidero una persona disciplinada, responsable, organizada, respetuosa, líder e innovadora. Con una alta disposición para obtener nuevos conocimientos que aporten a mi trabajo, a mi desarrollo profesional y personal. Me alegra poder afrontar nuevos retos y disfrutar del placer y satisfacción que se genera al culminarlos.</p>
+                    <div class="fila">
+                        <div class="col">
+                            <h3>Datos Personales</h3>
+                            <ul>
+                                <li><strong>Teléfono </strong>
+                                    3215579580 - 3054752548</li>
+                                <li><strong>Email </strong>
+                                    simondres@yahoo.es</li>
+                                <li><strong>Dirección </strong>
+                                    carrera 8 #10-26 Antioquia-Colombia</li>
+                                <li><strong>Cargo </strong>
+                                    <span>Desarrollador Full Stack</span></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>Intereses</h3>
+                            <div class="contenedor-intereses">
+                                <div class="interes">
+                                    <i class="fa-solid fa-people-roof"></i>
+                                    <span>FAMILIA</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-laptop"></i>
+                                    <span>PROGRAMAR</span>
+                                </div>
+                                <div class="interes">
+                                    <i class='fa-solid fa-gamepad'></i>
+                                    <span>JUEGOS</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-film"></i>
+                                    <span>PELICULAS</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-plane"></i>
+                                    <span>VIAJAR</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-dumbbell"></i>
+                                    <span>DEPORTE</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-guitar"></i>
+                                    <span>GUITARRA</span>
+                                </div>
+                                <div class="interes">
+                                    <i class="fa-solid fa-headphones"></i>
+                                    <span>MUSICA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1tlhZFSq4IuFTpCNnTrEOmhBCFYCUo6QG/view?usp=sharing">
+                    <button>Descargar CV<i class="fa-solid fa-download"></i>
+                        <span class='overlay'></span>
+                    </button>
+                    </a>
+                </div>
+            </section>
+            <section id='skills' class='skills'>
+                <div class="contenid-seccion">
+                    <h2>Skills</h2>
+                    <div class="fila">
+                        <!-- Technical Skill -->
+                        <div class="col">
+                            <h3>Tecnical Skills</h3>
+                            <div class="skill">
+                                <span>Javascript</span>
+                                <div class='barra-skill'>
+                                    <div class="progreso javascript">
+                                        <span>75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>HTML & CSS</span>
+                                <div class='barra-skill'>
+                                    <div class="progreso htmlcss">
+                                        <span>89%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>React</span>
+                                <div class='barra-skill'>
+                                    <div class="progreso react">
+                                        <span>85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>MySQL (MariaDB)</span>
+                                <div class='barra-skill'>
+                                    <div class="progreso mysql">
+                                        <span>65%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>SQL Server</span>
+                                <div class='barra-skill'>
+                                    <div class="progreso server">
+                                        <span>70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Professional Skill -->
+                        <div class="col">
+                            <h3>Profesional Skills</h3>
+                            <div class="skill">
+                                <span>Comunicación</span>
+                                <div class='barra-skill'>
+                                    <div class="progreso comunicacion">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>Trabajo en Equipo</span>
+                                <div class='barra-skill'>
+                                    <div class="progreso trabajoEquipo">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>Innovasión</span>
+                                <div class='barra-skill'>
+                                    <div class="progreso innovasion">
+                                        <span>95%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>Dedicación</span>
+                                <div class='barra-skill'>
+                                    <div class="progreso creatividad">
+                                        <span>95%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>responsabilidad</span>
+                                <div class='barra-skill'>
+                                    <div class="progreso responsabilidad">
+                                        <span>95%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section id='curriculum' class='curriculum'>
+                <div class="contenido-seccion">
+                    <h2>Curriculum</h2>
+                    <div class="fila">
+                        <div class="col izquierda">
+                            <h3>Educación</h3>
+                            <div class="item izq">
+                                <h4>Desarrollador Full Stack </h4>
+                                <div class='izqFoto'>
+                                    <div class='instituto'>
+                                        <span class="casa">Henry</span>
+                                        <span class="fecha">2023 - 2024</span>
+                                    </div>
+                                    <a href="https://drive.google.com/file/d/1OjnSvZAe2HIZxC8R2hqB8Q03RiZMjrcq/view?usp=drive_link">
+                                        <img src="\img/Henry.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <p>Conocimientos en Javascrit, HTML, CSS, PostgreSQL, React, Redux, sequelize. Aplicación de los conocimientos adquiridos en el proyecto IdiomasMaster página desarrollada en equipo para la venta de idiomas y el proyecto individual utilizando API REST.</p>
+                                <div class="conectori">
+                                    <div class="circuloi"></div>
+                                </div>
+                            </div>
+                            <div class="item izq">
+                                <h4>SQL Server</h4>
+                                <div class='izqFoto'>
+                                    <div class='instituto'>
+                                        <span class="casa">informaticonfig (you tube)</span>
+                                        <span class="fecha">2024</span>
+                                    </div>
+                                    <a href="https://www.youtube.com/watch?v=SYRsyAoN8BI&list=PL2Z95CSZ1N4EW0PvNhd4ySZisgBrJjSW2&ab_channel=INFORMATICONFIG">
+                                        <img src="\img/SQL Server.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <p>Conocimientos en los fundamentos esenciales de Microsoft SQL Server. Desde conceptos básicos de SQL, como consultas y manipulación de datos, hasta temas más avanzados como optimización de consultas y diseño de bases de datos eficientes.</p>
+                                <div class="conectori">
+                                    <div class="circuloi"></div>
+                                </div>
+                            </div>
+                            <div class="item izq">
+                                <h4>MySQL (MariaDB)</h4>
+                                <div class='izqFoto'>
+                                    <div class='instituto'>
+                                        <span class="casa">Programador Novato (you tube)</span>
+                                        <span class="fecha">2024</span>
+                                    </div>
+                                    <a href="https://www.youtube.com/watch?v=UzN-lDFvu3k&list=PLCTD_CpMeEKQmH9cRKWWHahygZFtIdwYG&ab_channel=ProgramadorNovato">
+                                        <img src="\img/MySQL.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <p>Conocimientos en el sistema de gestión de bases de datos relacional MariaDB el cual es derivado de MySQL, MariaDB Tiene una alta compatibilidad con MySQL ya que posee las mismas órdenes, interfaces, API y bibliotecas, siendo su objetivo poder cambiar un servidor por otro directamente.</p>
+                                <div class="conectori">
+                                    <div class="circuloi"></div>
+                                </div>
+                            </div>
+                            <div class="item izq">
+                                <h4>Power BI</h4>
+                                <div class='izqFoto'>
+                                    <div class='instituto'>
+                                        <span class="casa">Zakidata</span>
+                                        <span class="fecha">2024</span>
+                                    </div>
+                                    <a href="https://drive.google.com/file/d/1wrn9smjBVGp3n4dKEJ2OQWbuxh65S8QC/view?usp=drive_link">
+                                        <img src="\img/Power BI.JPG" alt="" />
+                                    </a>
+                                </div>
+                                <p>Conocimientos en el manejo de Power BI para la realización de presentaciones de gran nivel, con graficas y datos que mejoran la experiencia del Usuario</p>
+                                <div class="conectori">
+                                    <div class="circuloi"></div>
+                                </div>
+                            </div>
+                            <div class="item izq">
+                                <h4>Fundamentos de Ethica Hacking</h4>
+                                <div class='izqFoto'>
+                                    <div class='instituto'>
+                                        <span class="casa">Seguridad Cero</span>
+                                        <span class="fecha">2024</span>
+                                    </div>
+                                    <a href="https://drive.google.com/file/d/1MSyTpcoBovvji1g0eyom3SXDo_98YsZF/view?usp=drive_link">
+                                        <img src="\img/Fundamentos Ethica Hacking.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <p>Conocimientos y habilidades necesarias para llevar a cabo tus propias evaluaciones de seguridad y sumergirte en el apasionante mundo de la ciberseguridad.
+                                </p>
+                                <div class="conectori">
+                                    <div class="circuloi"></div>
+                                </div>
+                            </div>
+                            <div class="item izq">
+                                <h4>Inteligencia Artificial para la Productividad Laboral</h4>
+                                <div class='izqFoto'>
+                                    <div class='instituto'>
+                                        <span class="casa">
+                                            Universidad Católica de Oriente</span>
+                                        <span class="fecha">2024</span>
+                                    </div>
+                                    <a href="https://drive.google.com/file/d/1nyplXnTM_ZRkCL9_rEsRiy5eeQA4mqHB/view?usp=drive_link">
+                                        <img src="\img\AI Productividad Laboral.JPG" alt=" foto Certificado AI" />
+                                    </a>
+                                </div>
+                                <p>Conocimientos básicos en el uso de algunas herramientas de AI disponibles para facilitar las actividades en las diferentes profesiones y aumentar la productividad y velocidad de los procesos productivos y de servicios, búsqueda de empleo, realización de informes o cartas de presentación.</p>
+                                <div class="conectori">
+                                    <div class="circuloi"></div>
+                                </div>
+                            </div>
+                            <div class="item izq">
+                                <h4>Ingeniero de Producción</h4>
+                                <div class='izqFoto'>
+                                    <div class='instituto'>
+                                        <span class="casa">Instituto Tecnológico Metropolitano ITM</span>
+                                        <span class="fecha">2011</span>
+                                    </div>
+                                    <a href="https://drive.google.com/file/d/1Ge6A_fj2Fh_Klr_NTC0WGWhJoqEelMAd/view?usp=drive_link">
+                                        <img src="\img\Ingenieria Produccion.JPG" alt="Foto Diploma Ingeniería" />
+                                    </a>
+                                </div>
+                                <p>Ingeniería de Producción con conocimientos en procesos de manufactura, manejo de inventarios, manejo de personal, distribución de planta, manejo de herramientas de mejora continua como Lean, TPM, kaiser, liquidación de nomina, manejo de costos y logistica.</p>
+                                <div class="conectori">
+                                    <div class="circuloi"></div>
+                                </div>
+                            </div>
+                            <div class="item izq">
+                                <h4>Metodologias Agiles</h4>
+                                <div class='izqFoto'>
+                                    <div class='instituto'>
+                                        <span class="casa">Universidad Catolica de Oriente</span>
+                                        <span class="fecha">2024</span>
+                                    </div>
+                                    <a href="https://drive.google.com/file/d/1ooAeQwrBLNDFb8VNPJeLL8NByqNS74vi/view?usp=drive_link">
+                                        <img src="img\Metodologias Agiles.JPG" alt="Foto Metodologias Agiles" />
+                                    </a>
+                                </div>
+                                <p>Implementación de herramientas para la gestión de proyectos como Kanban, Lean, Metodología Toyota</p>
+                                <div class="conectori">
+                                    <div class="circuloi"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col derecha">
+                            <h3>Experiencia de trabajo</h3>
+                            <div class="item der">
+                                <h4>Proyecto Idiomas Master</h4>
+                                <div class='izqFoto'>
+                                    <div class='instituto'>
+                                        <span class="casa">Henry (bootcamp)</span>
+                                        <span class="fecha">2023 - 2024</span>
+                                    </div>
+                                    <a href="https://idiomasmaster-toqy.onrender.com/">
+                                        <img src="\img\IdiomasMaster.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <p>Proyecto grupal donde tuvimos la oportunidad de desarrolladar una plataforma de venta de cursos de Idiomas para la poblacion Hispana utilizando lenguajes y herramientas como Javascript, React, Express, Mercadopago, MongoDB, Redux, Talwind CSS, soket.io, utilizando Scrum y a trello para el asentamiento de tareas.</p>
+                                <div class="conectord">
+                                    <div class="circulod"></div>
+                                </div>
+                            </div>
+                            <div class="item der">
+                                <h4>Proyecto Pokémon</h4>
+                                <div class='izqFoto'>
+                                    <div class='instituto'>
+                                        <span class="casa">Henry (bootcamp)</span>
+                                        <span class="fecha">2023 - 2024</span>
+                                    </div>
+                                    <a href="https://idiomasmaster-toqy.onrender.com/">
+                                        <img src="\img\Pokémon.jpg" alt="foto Pokémon" />
+                                    </a>
+                                </div>
+                                <p>Proyecto individual tomando informacion de una API Rest y utilizando herramientas como Javascript, React, Express, Sequelize, Redux, HTML, CSS, PostgreSQL.</p>
+                                <div class="conectord">
+                                    <div class="circulod"></div>
+                                </div>
+                            </div>
+                            <div class="item der">
+                                <h4>Ingeniero de Producción</h4>
+                                <div class='izqFoto'>
+                                    <div class='instituto'>
+                                        <span class="casa">Corona Colceramica S.A</span>
+                                        <span class="fecha">2003 - 2023</span>
+                                    </div>
+                                    <a href="https://corona.co/_ui/spc/ciudades/girardota.html"><img src="\img\colceramica.jpg" alt="foto colcerámica" /></a>
+                                </div>
+                                <p>En 19 años en Corona S.A tuve la experiencia como facilitador, planeador, metrólogo y Planeador de mantenimiento (SAP). Adquiriendo competencias de trabajo en equipo, liderazgo, adaptación a los cambios, trabajo bajo presión, análisis de datos, uso de herramientas de mejora continua como Lean, TPM, kaiser, 5W-1H, Kamban</p>
+                                <div class="conectord">
+                                    <div class="circulod"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section >
+            <section id='portafolio' class='portafolio'>
+                <div class="contenido-seccion">
+                    <h2>Proyectos</h2>
+                    <div class="galeria">
+                        <div class="proyecto">
+                            <img src="\img\IdiomasMaster.jpg" alt="" />
+                            <div class="overlay">
+                                <a href="https://idiomasmaster-toqy.onrender.com/"><h3>Ecommerce Idiomas</h3>
+                                    <p>Idiomas Master</p></a>
+                            </div>
+                        </div>
+                        <div class="proyecto">
+                            <img src="\img\Pokémon.jpg" alt="" />
+                            <div class="overlay">
+                                <a href=""><h3>Api Rest</h3>
+                                    <p>Pókemon</p></a>
+                            </div>
+                        </div>
+                        <div class="proyecto">
+                            <img src="\img\Coca Cola.jpg" alt="" />
+                            <div class="overlay">
+                                <a href="https://landing-page-coca-cola.netlify.app"><h3>Landing Page</h3>
+                                    <p>Coca Cola</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class='footerPortafolio'>
+                <a href="#inicio" class='arriba'>
+                    <i class='fa-solid fa-angles-up'></i>
+                </a>
+                <div class='redes'>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </footer>
+        </div >
+    </div>
+    <script src="./js/Portafolio.js"></script>
+</body>
+</html>
